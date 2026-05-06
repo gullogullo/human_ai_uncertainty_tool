@@ -1045,7 +1045,7 @@ def render_semantic_graph(graph, show_header=True):
     const options = {
       "physics": {"enabled": false},
       "layout": {"improvedLayout": true, "randomSeed": 7},
-      "interaction": {"dragNodes": true, "dragView": true, "zoomView": true, "hover": true}
+      "interaction": {"dragNodes": true, "dragView": false, "zoomView": false, "hover": true}
     }
     """)
 

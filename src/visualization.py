@@ -90,10 +90,11 @@ def build_pyvis_graph(graph: EvidenceGraph, height: str = "760px", width: str = 
         "tooltipDelay": 150,
         "hideEdgesOnDrag": false,
         "hideEdgesOnZoom": false,
-        "navigationButtons": true,
-        "keyboard": true,
-        "zoomView": true,
-        "dragView": true
+        "dragNodes": true,
+        "navigationButtons": false,
+        "keyboard": false,
+        "zoomView": false,
+        "dragView": false
       }
     }
     """)
