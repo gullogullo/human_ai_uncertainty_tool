@@ -4,11 +4,16 @@ from __future__ import annotations
 
 import tempfile
 import base64
+import sys
 from pathlib import Path
 
 import pandas as pd
 import streamlit as st
 from pyvis.network import Network
+
+ROOT_DIR = Path(__file__).resolve().parents[1]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
 
 from src.evidence_queries import run_standard_evidence_queries
 from src.graph_builder import add_record_to_graph, build_evidence_graph, retrieval_edge_meaning
